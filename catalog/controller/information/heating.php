@@ -34,10 +34,10 @@ class ControllerInformationHeating extends Controller {
             $data['description'] = html_entity_decode($information_info['description'], ENT_QUOTES, 'UTF-8');
             //*********************************************************************
             //шорткод
-            if($data['description']){
+//            if($data['description']){
                 $this->load->model('shortcode/shortcode');
                 $data['description'] = $this->model_shortcode_shortcode->get($data['description']);
-            }
+//            }
 
 
             $data['continue'] = $this->url->link('common/home');
