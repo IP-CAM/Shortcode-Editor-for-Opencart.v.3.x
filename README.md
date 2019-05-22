@@ -5,4 +5,4 @@
 3.  в нужном контроллере , например  **/catalog/controller/information/heating.php** обрабатываем текст ```                $this->load->model('shortcode/shortcode');
                                                                                                                            $data['description'] = $this->model_shortcode_shortcode->get($data['description']); ```
 
-В редакторе ставим **[productsliders id="50,51"]**
+В редакторе ставим **[productsliders product_id="50,51"]**
